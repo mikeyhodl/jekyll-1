@@ -12,25 +12,25 @@
   <link rel="stylesheet" href="/css/screen.css">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Assets | Jekyll • Simple, blog-aware, static sites</title>
+<title>Security Policy | Jekyll • Simple, blog-aware, static sites</title>
 <meta name="generator" content="Jekyll v4.2.1" />
-<meta property="og:title" content="Assets" />
+<meta property="og:title" content="Security Policy" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Using CSS, JS, images and other assets is straightforward with Jekyll. Place them in your site folder and they’ll copy across to the built site." />
-<meta property="og:description" content="Using CSS, JS, images and other assets is straightforward with Jekyll. Place them in your site folder and they’ll copy across to the built site." />
-<link rel="canonical" href="https://jekyllrb.com/docs/step-by-step/07-assets/" />
-<meta property="og:url" content="https://jekyllrb.com/docs/step-by-step/07-assets/" />
+<meta name="description" content="Supported Versions" />
+<meta property="og:description" content="Supported Versions" />
+<link rel="canonical" href="https://jekyllrb.com/docs/security/" />
+<meta property="og:url" content="https://jekyllrb.com/docs/security/" />
 <meta property="og:site_name" content="Jekyll • Simple, blog-aware, static sites" />
 <meta property="og:image" content="https://jekyllrb.com/img/jekyll-og.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-12-23T13:06:30-08:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="https://jekyllrb.com/img/jekyll-og.png" />
-<meta property="twitter:title" content="Assets" />
+<meta property="twitter:title" content="Security Policy" />
 <meta name="twitter:site" content="@jekyllrb" />
 <meta name="google-site-verification" content="onQcXpAvtHBrUI5LlroHNE_FP0b2qvFyPq7VZw36iEY" />
 <script type="application/ld+json">
-{"description":"Using CSS, JS, images and other assets is straightforward with Jekyll. Place them in your site folder and they’ll copy across to the built site.","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://jekyllrb.com/img/logo-2x.png"}},"url":"https://jekyllrb.com/docs/step-by-step/07-assets/","@type":"BlogPosting","image":"https://jekyllrb.com/img/jekyll-og.png","headline":"Assets","dateModified":"2021-12-23T13:06:30-08:00","datePublished":"2021-12-23T13:06:30-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://jekyllrb.com/docs/step-by-step/07-assets/"},"@context":"https://schema.org"}</script>
+{"description":"Supported Versions","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://jekyllrb.com/img/logo-2x.png"}},"url":"https://jekyllrb.com/docs/security/","@type":"BlogPosting","image":"https://jekyllrb.com/img/jekyll-og.png","headline":"Security Policy","dateModified":"2021-12-23T13:06:30-08:00","datePublished":"2021-12-23T13:06:30-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://jekyllrb.com/docs/security/"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   <!--[if lt IE 9]>
@@ -124,111 +124,60 @@
 <div class="unit four-fifths">
       <article>
         <div class="improve right hide-on-mobiles">
-          <a data-proofer-ignore href="https://github.com/jekyll/jekyll/edit/master/docs/_docs/step-by-step/07-assets.md"><i class="fa fa-pencil"></i>  Improve this page</a>
+          <a data-proofer-ignore href="https://github.com/jekyll/jekyll/edit/master/docs/_docs/security.md"><i class="fa fa-pencil"></i>  Improve this page</a>
         </div>
-        <h1>Step by Step Tutorial</h1>
-        <h2>7. Assets</h2>
-        <p>Using CSS, JS, images and other assets is straightforward with Jekyll. Place
-them in your site folder and they’ll copy across to the built site.</p>
+        <h1>Security Policy</h1>
+        <h2 id="supported-versions">Supported Versions</h2>
 
-<p>Jekyll sites often use this structure to keep assets organized:</p>
+<p>Security updates are applied to the latest MINOR version of Jekyll, and the version used by GitHub Pages, v3.9.x.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.
-├── assets
-│   ├── css
-│   ├── images
-│   └── js
-...
-</code></pre></div></div>
-<p>So, from your assets folder, create folders called css, images and js.
-Additionally, directly under the root create another folder called ‘_sass’, which you will need shortly.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Version</th>
+      <th>Supported</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>4.2.x</td>
+      <td><img class="emoji" title=":white_check_mark:" alt=":white_check_mark:" src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png" height="20" width="20"></td>
+    </tr>
+    <tr>
+      <td>3.9.x</td>
+      <td><img class="emoji" title=":white_check_mark:" alt=":white_check_mark:" src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png" height="20" width="20"></td>
+    </tr>
+    <tr>
+      <td>&lt; 3.9.x</td>
+      <td><img class="emoji" title=":x:" alt=":x:" src="https://github.githubassets.com/images/icons/emoji/unicode/274c.png" height="20" width="20"></td>
+    </tr>
+  </tbody>
+</table>
 
-<h2 id="sass">Sass</h2>
+<h2 id="reporting-a-vulnerability">Reporting a Vulnerability</h2>
 
-<p>Inlining the styles used in <code class="language-plaintext highlighter-rouge">_includes/navigation.html</code>(adding or configuring within the same file) is not a best practice.
-Instead, let’s style the current page by defining our first class in a new css file instead.</p>
+<p>Please report vulnerabilities by sending an email to security@jekyllrb.com with the following information:</p>
 
-<p>To do this, refer to the class (that you will configure in the next parts of this step) from within the navigation.html file by removing the code you added earlier (to color the current link red) and inserting the following code:</p>
+<ol>
+  <li>A description of the vulnerability</li>
+  <li>Reproduction steps and/or a sample site (share a private repo to the <a href="docs/pages/team.md">Jekyll Security Team</a>)</li>
+  <li>Your contact information</li>
+</ol>
 
-<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;nav&gt;
-  <span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span><span class="nv">item</span><span class="w"> </span><span class="nt">in</span><span class="w"> </span><span class="nv">site.data.navigation</span><span class="w"> </span><span class="p">%}</span>
-    &lt;a href="<span class="p">{{</span><span class="w"> </span><span class="nv">item</span><span class="p">.</span><span class="nv">link</span><span class="w"> </span><span class="p">}}</span>" <span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nv">item</span><span class="p">.</span><span class="nv">link</span><span class="w"> </span><span class="p">%}</span>class="current"<span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">item</span><span class="p">.</span><span class="nv">name</span><span class="w"> </span><span class="p">}}</span>&lt;/a&gt;
-  <span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
-&lt;/nav&gt;
-</code></pre></div></div>
+<p>The Jekyll security team will respond to your submission and notify you whether it has been confirmed by the team.
+Your confidentiality is kindly requested as we work on a fix. We will provide our patch to you to test and verify that the vulnerability has
+been closed.</p>
 
-<p>You could use a standard CSS file for styling, we’re going to take it a step
-further by using <a href="https://sass-lang.com/">Sass</a>. Sass is a fantastic extension
-to CSS baked right into Jekyll.</p>
+<p>If you have created a patch and would like to submit that to us as well, we will happily consider it though we cannot guarantee that we will
+use it. If we use your patch, we will attribute authorship to you either as the commit author, or as a co-author.</p>
 
-<p>First create a Sass file at <code class="language-plaintext highlighter-rouge">assets/css/styles.scss</code> with the following content:</p>
+<p>Once a fix is verified, we will release PATCH versions of the supported MINOR versions and assign a CVE to the vulnerability. You will receive
+credit in our release post.</p>
 
-<div class="language-sass highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">---</span>
-<span class="nt">---</span>
-<span class="k">@import</span> <span class="s">"main";</span>
-</code></pre></div></div>
+<p>Once the patched version has been released, we will no longer request you to maintain confidentiality and you may choose to share details on
+how you found the vulnerability with the community.</p>
 
-<p>The empty front matter at the top tells Jekyll it needs to process the file. The
-<code class="language-plaintext highlighter-rouge">@import "main"</code> tells Sass to look for a file called <code class="language-plaintext highlighter-rouge">main.scss</code> in the sass
-directory (<code class="language-plaintext highlighter-rouge">_sass/</code>) by default which you already created directly under the root folder of your website).</p>
-
-<p>At this stage you’ll just have a main css file. For larger projects, this is a
-great way to keep your CSS organized.</p>
-
-<p>Create the current class mentioned above in order to color the current link green. Create a Sass file at <code class="language-plaintext highlighter-rouge">_sass/main.scss</code> with the following content:</p>
-
-<div class="language-sass highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.current</span> <span class="err">{</span>
-  <span class="nl">color</span><span class="p">:</span> <span class="no">green</span><span class="err">;</span>
-<span class="err">}</span>
-</code></pre></div></div>
-
-<p>You’ll need to reference the stylesheet in your layout.</p>
-
-<p>Open <code class="language-plaintext highlighter-rouge">_layouts/default.html</code> and add the stylesheet to the <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code>:</p>
-
-<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!doctype html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;meta charset="utf-8"&gt;
-    &lt;title&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">title</span><span class="w"> </span><span class="p">}}</span>&lt;/title&gt;
-    &lt;link rel="stylesheet" href="/assets/css/styles.css"&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    <span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>navigation.html<span class="w"> </span><span class="p">%}</span>
-    <span class="p">{{</span><span class="w"> </span><span class="nv">content</span><span class="w"> </span><span class="p">}}</span>
-  &lt;/body&gt;
-&lt;/html&gt;
-</code></pre></div></div>
-
-<p>The <code class="language-plaintext highlighter-rouge">styles.css</code> referenced here is generated by Jekyll from the <code class="language-plaintext highlighter-rouge">styles.scss</code> you created earlier in <code class="language-plaintext highlighter-rouge">assets/css/</code>.</p>
-
-<p>Load up <a href="http://localhost:4000" target="_blank" data-proofer-ignore="">http://localhost:4000</a>
-and check that the active link in the navigation is green.</p>
-
-<p>Next we’re looking at one of Jekyll’s most popular features, blogging.</p>
-
-        <div class="section-nav">
-      <div class="left align-right">
-        <a href="/docs/step-by-step/06-data-files/" class="prev">Back</a>
-        </div>
-      <div class="right align-left">
-      <a href="/docs/step-by-step/08-blogging/" class="next">Next</a>
-      </div>
-    </div>
-    <div class="clear"></div>
-    <ol class="step-nav">
-  <li><a href="/docs/step-by-step/01-setup/">Setup</a></li>
-  <li><a href="/docs/step-by-step/02-liquid/">Liquid</a></li>
-  <li><a href="/docs/step-by-step/03-front-matter/">Front Matter</a></li>
-  <li><a href="/docs/step-by-step/04-layouts/">Layouts</a></li>
-  <li><a href="/docs/step-by-step/05-includes/">Includes</a></li>
-  <li><a href="/docs/step-by-step/06-data-files/">Data Files</a></li>
-  <li class="current"><a href="/docs/step-by-step/07-assets/">Assets</a></li>
-  <li><a href="/docs/step-by-step/08-blogging/">Blogging</a></li>
-  <li><a href="/docs/step-by-step/09-collections/">Collections</a></li>
-  <li><a href="/docs/step-by-step/10-deployment/">Deployment</a></li>
-  </ol>
-</article>
+      </article>
     </div>
     <div class="unit one-fifth hide-on-mobiles">
   <aside>
